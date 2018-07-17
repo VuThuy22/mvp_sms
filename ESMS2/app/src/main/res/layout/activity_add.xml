@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_bankName"
+                style="@style/title"
+                android:layout_marginTop="20dp"
+                android:text="BIDV"
+                android:layout_gravity="center"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/txt_time"
+                style="@style/title"
+                android:layout_gravity="center"
+                android:text="01-17 10:48" />
+
+            <TextView
+                android:id="@+id/txt_total"
+                style="@style/title"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="72.000.000"
+                android:textSize="30dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:paddingBottom="30dp">
+
+                <TextView
+                    style="@style/title"
+                    android:text="+2.08" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    style="@style/title"
+                    android:layout_marginLeft="25dp"
+                    android:text="+0.18%" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/image_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/ic_add"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="20dp"/>
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue2"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"></android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_sms"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

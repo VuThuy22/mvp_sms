@@ -1,0 +1,31 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="110dp"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/bg_item">
+    <TextView
+        android:id="@+id/txt_bankName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:textColor="@color/grey"
+        android:text="MB bank"/>
+    <TextView
+        android:id="@+id/txt_totalBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="$039243+0.34%"
+        android:textColor="@color/red"
+        />
+
+
+
+</LinearLayout>
