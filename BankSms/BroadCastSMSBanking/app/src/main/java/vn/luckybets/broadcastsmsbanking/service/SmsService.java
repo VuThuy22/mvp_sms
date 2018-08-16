@@ -37,4 +37,9 @@ public class SmsService extends Service {
         sendBroadcast(broadcastIntent);
     }
 
+    @Override
+    public void onTaskRemoved(Intent rootIntent) {
+        Intent intent = new Intent("com.android.ServiceStopped");
+        sendBroadcast(intent);
+    }
 }

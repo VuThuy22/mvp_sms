@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.android.ServiceStopped"/>
 
     <application
         android:allowBackup="true"
@@ -38,6 +39,7 @@
             <intent-filter>
                 <action android:name="com.android.techtrainner" />
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.android.ServiceStopped" />
                 <action android:name="ac.in.ActivityRecognition.RestartSensor" />
             </intent-filter>
         </receiver>

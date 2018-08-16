@@ -260,6 +260,4 @@ public class MainActivity extends AppCompatActivity implements HomeView {
         super.onDestroy();
         unregisterReceiver(receiver);
     }
-
-
 }
